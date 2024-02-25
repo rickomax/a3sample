@@ -11,15 +11,15 @@ PALETTE MAINPAL{
 }
 
 # DEBUG STUFF
-FONT MAINFONT,<font_amb.lbm>,8,16;
-STRING DEBUGSTRING, ".......................................................................................................................................";
-TEXT DEBUGTEXT {
-	FONT MAINFONT;
-	POS_X 0;
-	POS_Y 0;
-	STRING DEBUGSTRING;
-	FLAGS VISIBLE;
-}
+#FONT MAINFONT,<font_amb.lbm>,8,16;
+#STRING DEBUGSTRING, ".......................................................................................................................................";
+#TEXT DEBUGTEXT {
+#	FONT MAINFONT;
+#	POS_X 0;
+#	POS_Y 0;
+#	STRING DEBUGSTRING;
+#	FLAGS VISIBLE;
+#}
 #PANEL debug_panel {
 #POS_X 0;
 #POS_Y 0;
@@ -260,7 +260,7 @@ ACTION MOVE {
 
 		LOCATE;
 
-		TO_STRING DEBUGSTRING, FLOOR_HGT;
+		#TO_STRING DEBUGSTRING, FLOOR_HGT;
 
 		SET RENDER_MODE, 2; 
 }
